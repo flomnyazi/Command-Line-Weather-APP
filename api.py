@@ -10,7 +10,10 @@ w = forecast.get_weather()
 #This variable shortens the GET request function that will obtain the weather data
 wind = w.get_wind
 temperature = w.get_temperature('celsius')
+tomorrow = pyowm.timeutils.tomorrow()
+#this creates a variable tomorrow that tells the next day's weather
 
 print (w)
 print (wind)
 print (temperature)
+print(tomorrow)
